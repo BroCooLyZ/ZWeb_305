@@ -186,7 +186,7 @@
       border: 8px solid transparent;
       background: var(--gradient) border-box;
       -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-      -webkit-mask-composite: xor;
+      webkit-mask-composite: xor;
       mask-composite: exclude;
       box-shadow: 0 15px 40px rgba(230, 57, 70, 0.3);
       transition: all 0.5s ease;
@@ -730,7 +730,7 @@
         </div>
         <div class="col-lg-6 text-center">
           <div class="profile-img-container">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" class="profile-img" alt="Charles Zingalaoa">
+            <img src="C:\xampp\htdocs\ZWeb_305\Zweb_portfolio\public\charles.jpeg" class="profile-img img-fluid" alt="Charles Zingalaoa">
             <div class="floating-elements">
               <div class="floating-element">
                 <i class="fas fa-code"></i>
@@ -756,7 +756,7 @@
       <div class="about-content fade-in">
         <div class="row align-items-center">
           <div class="col-md-5 text-center mb-4 mb-md-0">
-            <img src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1771&q=80" class="about-img img-fluid" alt="About Charles">
+            <img src="public/profile.jpg" class="about-img img-fluid" alt="About Charles">
           </div>
           <div class="col-md-7">
             <h3 class="mb-3">Hi, I'm Sir Anthoine Charles G. Zingalaoa</h3>
