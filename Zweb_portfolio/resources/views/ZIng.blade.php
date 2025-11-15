@@ -718,7 +718,7 @@
         <div class="col-lg-6">
           <div class="hero-content">
             <h1>
-              <span class="gradient-text">Charles Zingalaoa</span>
+              <span class="gradient-text">Sir Anthoine Charles G. Zingalaoa</span>
               <span style="font-size: 1.8rem; display: block; margin-top: 0.5rem;">Computer Science Student & Developer</span>
             </h1>
             <p>Passionate about creating innovative digital solutions. Specializing in web development, AI, and software engineering with a focus on user-centered design.</p>
@@ -731,7 +731,7 @@
         <div class="col-lg-6 text-center">
           <div class="profile-img-container">
          
-            <img class="about-img img-fluid" src="{{ asset('IMG/charles.jpeg') }}" alt="Charles Zingalaoa Avatar">
+            <img class="about-img img-fluid" src="{{ asset('IMG/profile.jpg') }}" alt="Charles Zingalaoa Avatar">
             <div class="floating-elements">
               <div class="floating-element">
                 <i class="fas fa-code"></i>
@@ -757,7 +757,7 @@
       <div class="about-content fade-in">
         <div class="row align-items-center">
           <div class="col-md-5 text-center mb-4 mb-md-0">
-            <img class="about-img img-fluid" src="IMG/profile.jpg" alt="Charles Zingalaoa Avatar">
+            <img class="about-img img-fluid" src="IMG/charles.jpeg" alt="Charles Zingalaoa Avatar">
 
           </div>
           <div class="col-md-7">
@@ -771,7 +771,7 @@
               <div>
                 <span class="skill-badge">HTML/CSS</span>
                 <span class="skill-badge">JavaScript</span>
-                <span class="skill-badge">React</span>
+                <span class="skill-badge">Photoshop</span>
                 <span class="skill-badge">Python</span>
                 <span class="skill-badge">Java</span>
                 <span class="skill-badge">UI/UX Design</span>
