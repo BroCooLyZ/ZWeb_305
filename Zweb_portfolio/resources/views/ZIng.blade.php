@@ -730,7 +730,8 @@
         </div>
         <div class="col-lg-6 text-center">
           <div class="profile-img-container">
-            <img src="C:\xampp\htdocs\ZWeb_305\Zweb_portfolio\public\charles.jpeg" class="profile-img img-fluid" alt="Charles Zingalaoa">
+         
+            <img class="about-img img-fluid" src="{{ asset('IMG/charles.jpeg') }}" alt="Charles Zingalaoa Avatar">
             <div class="floating-elements">
               <div class="floating-element">
                 <i class="fas fa-code"></i>
@@ -756,7 +757,8 @@
       <div class="about-content fade-in">
         <div class="row align-items-center">
           <div class="col-md-5 text-center mb-4 mb-md-0">
-            <img src="public/profile.jpg" class="about-img img-fluid" alt="About Charles">
+            <img class="about-img img-fluid" src="IMG/profile.jpg" alt="Charles Zingalaoa Avatar">
+
           </div>
           <div class="col-md-7">
             <h3 class="mb-3">Hi, I'm Sir Anthoine Charles G. Zingalaoa</h3>
