@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 Route::get('/', function () {
-     return view('authentication.register'); 
+     return view('authentication.login'); 
 });
 
 Route::get('register', [AuthController::class, 'showRegister'])->name('register.form');
