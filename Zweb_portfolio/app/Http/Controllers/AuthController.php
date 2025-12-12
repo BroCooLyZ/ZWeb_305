@@ -44,21 +44,14 @@ class AuthController extends Controller
         ]);
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    function logout(Request $request)
+    {
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        
+        return redirect()->route('login.form')->with('success', 'You have been logged out successfully.');
+    }
 
 
 }

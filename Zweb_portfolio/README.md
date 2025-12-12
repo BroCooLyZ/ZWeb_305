@@ -1,59 +1,97 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Sir Anthoine Charles G Zingalaoa — Official Web Portfolio
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Project Overview
 
-## About Laravel
+Welcome to the source for the Sir Anthoine Charles G Zingalaoa official web portfolio. This Laravel application serves as a digital resume and showcase platform to highlight skills, projects, and contact information.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+The application uses Blade templates for views, a lightweight authentication flow (registration, login, logout), and a MySQL database for dynamic content.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Tech Stack
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Framework:** Laravel
+- **Language:** PHP, JavaScript
+- **Frontend:** HTML5, CSS3, Blade Templates
+- **Database:** MySQL / MariaDB
+- **Tools:** Composer, npm, XAMPP (optional), VS Code
 
-## Learning Laravel
+## Key Features
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+- Dynamic portfolio pages that can pull content from the database
+- Registration, login, and logout via `AuthController`
+- Responsive UI optimized for desktop and mobile
+- Simple admin/backend-ready structure for managing content
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Installation & Setup
 
-## Laravel Sponsors
+Follow these steps to run the project locally.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+1. From the project root run:
 
-### Premium Partners
+```powershell
+composer install
+copy .env.example .env
+php artisan key:generate
+```
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+2. Configure your database settings in the `.env` file (set `DB_HOST`, `DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD`) and run migrations if needed:
 
-## Contributing
+```powershell
+php artisan migrate
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+3. Install frontend dependencies and compile assets:
 
-## Code of Conduct
+```powershell
+npm install
+npm run dev
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Run the application
 
-## Security Vulnerabilities
+- Option A — Laravel dev server (recommended):
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```powershell
+php artisan serve
+# Open http://127.0.0.1:8000 in your browser
+```
 
-## License
+- Option B — XAMPP / Apache:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+1. Start Apache & MySQL from XAMPP Control Panel.
+2. Ensure the project folder is inside `htdocs` and open `http://localhost/Zweb_portfolio/public`.
+
+## View the Login Page
+
+- After starting the server, open: `http://127.0.0.1:8000/login` (dev server)
+- Or: `http://localhost/Zweb_portfolio/public/login` (XAMPP)
+
+## Troubleshooting
+
+- Route not defined errors (e.g., `Route [logout] not defined`):
+
+```powershell
+php artisan route:clear
+php artisan cache:clear
+php artisan config:clear
+php artisan view:clear
+php artisan serve    # restart the server
+```
+
+- Images not appearing: check `public/Images` vs `public/images` and use the matching case in Blade (Windows may be case-insensitive but some tooling isn't). Use `{{ asset('Images/profile.jpg') }}` if the folder is `Images`.
+
+- Syntax errors: open the file shown in the error and fix stray characters (common mistakes: extra `;` after function declaration, missing `{`).
+
+## Useful Commands
+
+- `php artisan route:list` — list registered routes
+- `php artisan migrate` — run database migrations
+- `php artisan serve` — run dev server
+
+## Next Steps
+
+- Start the server and verify pages (login, register, dashboard).
+- I can add screenshots, update the `README` with deployment instructions, or add a `LICENSE` file if you'd like.
+
+---
+
+If you want any changes to the README content (more screenshots, credits, or project-specific instructions), tell me what to add.

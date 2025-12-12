@@ -705,6 +705,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+          <a href="{{ route('login') }}" class="btn btn-primary-custom btn-sm">Login</a>
+        </li>
         </ul>
       </div>
     </div>

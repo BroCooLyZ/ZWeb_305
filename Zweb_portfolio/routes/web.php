@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 Route::get('/', function () {
-     return view('authentication.login'); 
+     return view('authentication.ZIng'); 
 });
 
 Route::get('register', [AuthController::class, 'showRegister'])->name('register.form');
@@ -18,10 +18,11 @@ Route::get('dashboard', function () {
     return view('dashboard');
 })->middleware('auth')->name('dashboard');
   
+Route::post('logout', [AuthController::class, 'logout'])->name('logout');
 
 
 
 
-//Route::get('/', function () {
-    //return view('Zing');
-//});
+Route::get('/', function () {
+    return view('Zing');
+});
